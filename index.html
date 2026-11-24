@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cereja · DJ, comunicador e apresentador</title>
+<meta name="description" content="Cereja é DJ, comunicador e apresentador. Music, sports, entertainment: DJ oficial da Kings League Brasil, com passagens por Rock in Rio, The Town, Prêmio Multishow e Maracanã.">
+<link rel="canonical" href="https://djcereja.com/">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta name="theme-color" content="#3a0204">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://djcereja.com/">
+<meta property="og:title" content="Cereja · DJ, comunicador e apresentador">
+<meta property="og:description" content="Dos maiores palcos do Brasil e do mundo aos universos do esporte e das mídias digitais.">
+<meta property="og:image" content="https://djcereja.com/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"CEREJA EVENTOS LTDA","alternateName":"DJ Cereja","taxID":"67.145.617/0001-76","url":"https://djcereja.com/","logo":"https://djcereja.com/img/logo-red.png","email":"contato@djcereja.com","sameAs":["https://www.instagram.com/cereja.djj/","https://www.facebook.com/profile.php?id=61596624517384"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: hero em "céu" de fumaça vermelha com arco 3D de cards girando; página clara com faixa de marcas, manifesto com pílulas de foto e bento de números. */
+:root{
+  --red:#f02233;
+  --blood:#8d0303;
+  --ember:#ff5a4a;
+  --ink:#0d0b0b;
+  --paper:#f5f2ef;
+  --card:#ebe6e2;
+  --stone:#8a817c;
+  --sans:"Geist",system-ui,-apple-system,sans-serif;
+  --mono:"Geist Mono",ui-monospace,monospace;
+  --gl:max(16px,env(safe-area-inset-left,0px));
+  --gr:max(16px,env(safe-area-inset-right,0px));
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0f0d0d;--card:#1b1716;--ink:#f3eeea;--stone:#9a908b;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0f0d0d;--card:#1b1716;--ink:#f3eeea;--stone:#9a908b;color-scheme:dark}
+*{box-sizing:border-box}
+html{overflow-x:clip}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+p,h1,h2,h3{margin:0}
+h1,h2,h3{text-wrap:balance;font-weight:500;letter-spacing:-.035em}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.wrap{max-width:1320px;margin:0 auto;padding-left:var(--gl);padding-right:var(--gr)}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:12px 14px 12px 22px;text-decoration:none;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;transition:transform .25s,background .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn .ar{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:#0d0b0b;color:#fff;font-size:13px;transition:transform .3s}
+.btn:hover .ar{transform:rotate(-45deg)}
+.btn-light{background:#fff;color:#0d0b0b}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.28);padding-right:22px;backdrop-filter:blur(6px)}
+
+/* HERO */
+.hero-shell{padding:10px max(10px,env(safe-area-inset-left,0px)) 0 max(10px,env(safe-area-inset-right,0px))}
+.hero{position:relative;border-radius:22px;overflow:hidden;background:#3a0204;color:#fff;isolation:isolate;padding-bottom:70px}
+#smoke{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(120% 70% at 50% 110%,rgba(0,0,0,.55),transparent 60%);pointer-events:none}
+.hnav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px clamp(16px,3vw,34px)}
+.hnav img{height:22px;width:auto}
+.hnav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.hnav ul a{text-decoration:none;color:rgba(255,255,255,.85)}
+.hnav ul a:hover{color:#fff}
+.hnav .cta{background:#fff;color:#0d0b0b;border-radius:999px;padding:10px 18px;text-decoration:none}
+@media (max-width:900px){.hnav ul{display:none}}
+.htext{text-align:center;padding:clamp(40px,7vw,90px) 16px 0}
+.htext h1{font-size:clamp(44px,7vw,96px);line-height:.98;font-weight:500}
+.htext h1 span{color:rgba(255,255,255,.62)}
+.htext p{max-width:46ch;margin:22px auto 0;color:rgba(255,255,255,.82);font-size:17px}
+.hbtns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+
+/* arco 3D */
+.stage3d{position:relative;height:calc(var(--w,190px) * 1.25 + 46px);overflow:hidden;margin-top:clamp(30px,5vw,60px);perspective:1400px;perspective-origin:50% 20%}
+.ring{position:absolute;left:50%;top:10px;width:0;height:0;transform-style:preserve-3d;animation:orbit 60s linear infinite}
+.stage3d:hover .ring{animation-play-state:paused}
+@keyframes orbit{from{transform:translateZ(calc(var(--R) * -1)) rotateY(0)}to{transform:translateZ(calc(var(--R) * -1)) rotateY(-360deg)}}
+.tile{position:absolute;left:calc(var(--w) / -2);top:0;width:var(--w);height:calc(var(--w) * 1.25);border-radius:12px;overflow:hidden;backface-visibility:hidden;transform:rotateY(calc(var(--i) * var(--step))) translateZ(var(--R));box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.tile img{width:100%;height:100%;object-fit:cover}
+.tile.txt{background:#fff;color:#0d0b0b;padding:calc(var(--w) * .085);display:flex;flex-direction:column;justify-content:space-between}
+.tile.txt.dark{background:#0d0b0b;color:#fff}
+.tile.txt.red{background:var(--red);color:#fff}
+.tile.txt.glass{background:rgba(255,255,255,.14);color:#fff;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.3)}
+.tile b{display:block;margin-bottom:calc(var(--w) * .035);white-space:nowrap;font-size:calc(var(--w) * .15);font-weight:500;letter-spacing:-.04em;line-height:1}
+.tile b.wrapb{white-space:normal;font-size:calc(var(--w) * .12);line-height:1.05}
+.tile small{display:block;font-size:calc(var(--w) * .064);line-height:1.3;opacity:.8}
+.tile .tm{font-family:var(--mono);font-size:calc(var(--w) * .05);letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+.tile .cap{position:absolute;left:8px;right:8px;bottom:8px;background:#fff;color:#0d0b0b;border-radius:8px;padding:calc(var(--w) * .045) calc(var(--w) * .06);line-height:1.2}
+.tile .cap b{font-size:calc(var(--w) * .1);margin:0}
+.rating{text-align:center;margin-top:8px;color:rgba(255,255,255,.75);font-size:14px}
+.rating i{font-style:normal;color:var(--red);letter-spacing:4px}
+
+/* MARCAS */
+.logos{overflow:hidden;background:#0d0b0b;padding-block:30px;margin:10px 10px 0;border-radius:22px}
+.logos .row{display:flex;align-items:center;gap:72px;width:max-content;animation:roll 40s linear infinite;padding-left:72px}
+.logos img{display:block;height:var(--h,40px);width:auto;opacity:.82;transition:opacity .3s}
+.logos img:hover{opacity:1}
+@media (max-width:640px){.logos{padding-block:22px}.logos .row{gap:48px;padding-left:48px}.logos img{height:calc(var(--h,40px) * .78)}}
+@media (prefers-reduced-motion:reduce){.logos .row{animation:none}}
+@keyframes roll{to{transform:translateX(-50%)}}
+
+/* MANIFESTO */
+.about{padding-block:clamp(70px,9vw,120px) clamp(40px,5vw,60px);text-align:center}
+.about .mono{color:var(--stone);display:inline-flex;align-items:center;gap:8px}
+.about .mono::before{content:"";width:5px;height:5px;background:var(--red);border-radius:50%}
+.about h2{margin:22px auto 0;max-width:20ch;font-size:clamp(32px,4.6vw,62px);line-height:1.1}
+.about h2 .soft{color:var(--stone)}
+.about .lede{margin:22px auto 0;max-width:46ch;font-size:clamp(17px,1.6vw,21px);line-height:1.5;color:var(--stone)}
+.pillimg{display:inline-block;vertical-align:middle;width:1.55em;height:1.0em;border-radius:999px;overflow:hidden;margin:0 .12em;position:relative;top:-.06em}
+.pillimg img{width:100%;height:100%;object-fit:cover}
+.pillc{display:inline-grid;place-items:center;vertical-align:middle;width:1em;height:1em;border-radius:50%;background:var(--red);margin:0 .12em;position:relative;top:-.06em}
+.pillc img{width:52%}
+
+/* BENTO */
+.bento{display:grid;grid-template-columns:1.05fr 1fr 1fr;grid-template-rows:auto auto;gap:14px;padding-bottom:clamp(70px,9vw,120px)}
+.b{border-radius:20px;padding:22px;position:relative;overflow:hidden;min-width:0}
+.b.photo{grid-row:span 2;background:var(--blood);padding:0;min-height:520px;color:#fff}
+.b.photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;filter:grayscale(1) contrast(1.1);mix-blend-mode:luminosity;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.b.photo:hover>img{transform:scale(1.04)}
+.b.photo .lg{position:absolute;left:18px;top:18px;width:110px}
+.b.photo .inner{position:absolute;left:14px;right:14px;bottom:14px;background:#fff;color:#0d0b0b;border-radius:14px;padding:20px}
+.big{font-size:clamp(54px,6vw,84px);font-weight:400;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums}
+.b.grey{background:var(--card);grid-row:span 2;display:flex;flex-direction:column;justify-content:space-between;gap:30px}
+.b.grey blockquote{margin:0;font-size:17px;line-height:1.45}
+.faces{display:flex;margin-bottom:14px}
+.faces img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid var(--card);margin-left:-8px}
+.faces img:first-child{margin-left:0}
+.b.red{background:var(--red);color:#fff;min-height:250px;display:flex;flex-direction:column;justify-content:space-between}
+.b.dark{background:#0d0b0b;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.b small{display:block;font-size:14px;opacity:.8}
+.b .lbl{font-size:14px;opacity:.8}
+.minibars{display:flex;align-items:end;gap:5px;height:56px}
+.minibars i{flex:1;background:rgba(255,255,255,.85);border-radius:3px 3px 0 0;transform-origin:bottom;animation:eq 1.2s ease-in-out infinite alternate}
+@keyframes eq{from{transform:scaleY(.25)}to{transform:scaleY(1)}}
+@media (max-width:900px){.bento{grid-template-columns:1fr 1fr}.b.photo{grid-column:1/-1;grid-row:auto;min-height:480px}.b.grey{grid-row:auto}}
+@media (max-width:560px){.bento{grid-template-columns:1fr}}
+
+/* DESTAQUES */
+.feats{background:#0d0b0b;color:#f3eeea;padding-block:clamp(70px,9vw,120px);border-radius:22px;margin:0 max(10px,env(safe-area-inset-right,0px)) 0 max(10px,env(safe-area-inset-left,0px))}
+.fhead{display:flex;justify-content:space-between;align-items:end;gap:20px 40px;flex-wrap:wrap;margin-bottom:40px}
+.fhead h2{font-size:clamp(38px,5.4vw,74px);line-height:1}
+.fhead h2 span{color:#7d7470}
+.arrows{display:flex;gap:8px}
+.arrows button{width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:none;color:#fff;font-size:18px;cursor:pointer;transition:background .2s}
+.arrows button:hover{background:var(--red);border-color:var(--red)}
+.scroller{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:none}
+.scroller::-webkit-scrollbar{display:none}
+.fc{flex:none;width:min(360px,80vw);min-height:420px;border-radius:18px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;scroll-snap-align:start;background:#1c1817;position:relative;overflow:hidden;transition:transform .35s}
+.fc:hover{transform:translateY(-6px)}
+.fc.r{background:var(--red)}.fc.b{background:var(--blood)}.fc.w{background:#f3eeea;color:#0d0b0b}
+.fc .yr{font-size:84px;font-weight:300;letter-spacing:-.06em;line-height:.9}
+.fc h3{font-size:28px;line-height:1.05}
+.fc p{margin-top:10px;font-size:14.5px;opacity:.8}
+.fc .chip{align-self:start;border:1px solid currentColor;border-radius:999px;padding:5px 11px;opacity:.8}
+.fc .wm{position:absolute;right:-30px;top:-30px;width:180px;opacity:.12;transition:transform 1s}
+.fc:hover .wm{transform:rotate(-60deg)}
+
+/* PILARES + CONTATO */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding-block:clamp(70px,9vw,120px) 0}
+.pl{background:var(--card);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.pl .ic{width:44px;height:44px;border-radius:12px;background:var(--red);display:grid;place-items:center;color:#fff;font-family:var(--mono);font-size:13px}
+.pl h3{font-size:30px}
+.pl p{color:var(--stone);font-size:15.5px}
+.pl ul{list-style:none;margin:auto 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.pl li{background:var(--paper);border-radius:999px;padding:5px 12px;font-size:13px}
+@media (max-width:860px){.pillars{grid-template-columns:1fr}}
+
+.cta{padding-block:clamp(70px,9vw,120px)}
+.ctabox{border-radius:22px;background:linear-gradient(135deg,var(--red),var(--blood));color:#fff;padding:clamp(28px,5vw,64px);display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end;position:relative;overflow:hidden;isolation:isolate}
+.ctabox .wm{position:absolute;right:-60px;bottom:-80px;width:420px;opacity:.12;z-index:-1;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ctabox h2{font-size:clamp(40px,6vw,84px);line-height:.98}
+.ctabox p{margin-top:16px;max-width:42ch;opacity:.9}
+.lines{display:grid;gap:10px}
+.line{display:flex;justify-content:space-between;align-items:center;gap:12px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:14px 14px 14px 18px;flex-wrap:wrap}
+.line div{min-width:0}
+.line strong{display:block;font-size:18px;font-weight:500;user-select:all;overflow-wrap:anywhere}
+.line small{opacity:.75}
+.line button{background:#fff;color:#0d0b0b;border:0;border-radius:999px;padding:9px 15px;font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+@media (max-width:860px){.ctabox{grid-template-columns:1fr}}
+footer{padding-block:0 30px}
+@media (max-width:640px){br.dk{display:none}}
+footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--red)}footer .soc{display:flex;gap:18px}footer .todo{background:#ffe08a;color:#000;padding:0 4px;border-radius:3px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:var(--stone);font-size:13px}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="hero-shell">
+<header class="hero" id="top">
+  <canvas id="smoke" aria-hidden="true"></canvas>
+  <nav class="hnav mono" aria-label="Principal">
+    <img src="img/logo.png" alt="cereja" width="1000" height="197">
+    <ul><li><a href="#sobre">Sobre</a></li><li><a href="#destaques">Trajetória</a></li><li><a href="#frentes">O que faz</a></li><li><a href="#contato">Contato</a></li></ul>
+    <a class="cta" href="#contato">Booking</a>
+  </nav>
+  <div class="htext">
+    <div class="mono" style="margin:0 0 18px;color:rgba(255,255,255,.75)">DJ, comunicador e apresentador.</div>
+    <h1>MUSIC. SPORTS. ENTERTAINMENT.</h1>
+    <p>Dos maiores palcos do Brasil e do mundo aos universos do esporte e das mídias digitais.</p>
+    <div class="hbtns">
+      <a class="btn btn-ghost" href="#destaques">Conheça a trajetória</a>
+      <a class="btn btn-light" href="#contato">Chamar o Cereja <span class="ar">↗</span></a>
+    </div>
+  </div>
+  <div class="stage3d" aria-label="Destaques em cards girando">
+    <div class="ring" id="ring">
+      <div class="tile"><img src="img/hero.jpg" alt="Cereja na cabine com convidados" style="object-position:50% 40%"></div>
+      <div class="tile txt"><span class="tm">Shows por ano</span><div><b>+200</b><small>Entre festivais, eventos, casamentos, XV anos e festas privadas.</small></div></div>
+      <div class="tile"><img src="img/g-madrid.jpg" alt="Cereja com convidados em Madri" style="object-position:50% 30%"><div class="cap"><span class="tm">Europa</span><b>Madri</b></div></div>
+      <div class="tile txt dark"><span class="tm">Kings League Brasil</span><div><b>DJ oficial</b><small>do aquecimento ao apito final</small></div></div>
+      <div class="tile"><img src="img/crouch.jpg" alt="Retrato de Cereja com o monograma vermelho"></div>
+      <div class="tile txt red"><span class="tm">Ao vivo</span><div><b>N Sports</b><small>e Desimpedidos, toda semana</small></div></div>
+      <div class="tile"><img src="img/g-cabine.jpg" alt="Cereja na cabine com convidado"></div>
+      <div class="tile txt glass"><span class="tm">Mundo</span><div><b>9 países</b><small>e +110 cidades no Brasil</small></div></div>
+      <div class="tile"><img src="img/stage.jpg" alt="Cereja no palco, de costas para a câmera" style="object-position:30% 50%"></div>
+      <div class="tile txt"><span class="tm">Eliminatórias da Copa do Mundo de 2026</span><div><b class="wrapb">DJ oficial no Maracanã</b><small>Brasil x Chile</small></div></div>
+      <div class="tile"><img src="img/g-festa.jpg" alt="Cereja na cabine em festa privada"></div>
+      <div class="tile txt dark"><span class="tm">Festivais</span><div><b>Rock in Rio</b><small>The Town e Rock in Rio Lisboa</small></div></div>
+    </div>
+  </div>
+  </header>
+</div>
+
+<div class="logos" aria-label="Marcas e palcos">
+  <div class="row">
+    <img src="img/logos/cocacola.png" alt="Coca-Cola" style="--h:38px"><img src="img/logos/kings.png" alt="Kings League" style="--h:58px"><img src="img/logos/budweiser.svg" alt="Budweiser" style="--h:36px"><img src="img/logos/rockinrio.png" alt="Rock in Rio" style="--h:38px"><img src="img/logos/heineken.png" alt="Heineken" style="--h:50px"><img src="img/logos/nsports.png" alt="N Sports" style="--h:48px"><img src="img/logos/cazetv.png" alt="CazéTV" style="--h:46px"><img src="img/logos/thetown.png" alt="The Town" style="--h:48px"><img src="img/logos/r10.png" alt="R10 Score" style="--h:50px"><img src="img/logos/multishow.png" alt="Multishow" style="--h:44px">
+    <img src="img/logos/cocacola.png" alt="" style="--h:38px" aria-hidden="true"><img src="img/logos/kings.png" alt="" style="--h:58px" aria-hidden="true"><img src="img/logos/budweiser.svg" alt="" style="--h:36px" aria-hidden="true"><img src="img/logos/rockinrio.png" alt="" style="--h:38px" aria-hidden="true"><img src="img/logos/heineken.png" alt="" style="--h:50px" aria-hidden="true"><img src="img/logos/nsports.png" alt="" style="--h:48px" aria-hidden="true"><img src="img/logos/cazetv.png" alt="" style="--h:46px" aria-hidden="true"><img src="img/logos/thetown.png" alt="" style="--h:48px" aria-hidden="true"><img src="img/logos/r10.png" alt="" style="--h:50px" aria-hidden="true"><img src="img/logos/multishow.png" alt="" style="--h:44px" aria-hidden="true">
+  </div>
+</div>
+
+<section class="about wrap" id="sobre">
+  <span class="mono">Sobre</span>
+  <h2>Do Rio de Janeiro <span class="pillimg"><img src="img/stage.jpg" alt="" style="object-position:30% 40%"></span> para o mundo <span class="pillc"><img src="img/c.png" alt=""></span></h2>
+  <p class="lede">Com carreira iniciada em 2015, Cereja conectou pessoas, marcas, esporte, entretenimento e participou de momentos mundiais.</p>
+</section>
+
+<section class="wrap bento" aria-label="Números">
+  <div class="b photo">
+    <img src="img/portrait.jpg" alt="Retrato de Cereja em preto e branco">
+    <img class="lg" src="img/logo.png" alt="" style="position:absolute;mix-blend-mode:normal;filter:none;width:110px;height:auto;inset:18px auto auto 18px">
+    <div class="inner"><div class="big">+<span data-to="10">10</span></div><p class="lbl">anos de carreira</p></div>
+  </div>
+  <div class="b grey">
+    <div><span class="lbl">Seguidores somados</span><div class="big" style="margin-top:10px">+<span data-to="130">130</span>K</div></div>
+    <div><div class="faces"><img src="img/g-gala.jpg" alt=""><img src="img/g-sol.jpg" alt=""><img src="img/g-noite.jpg" alt=""><img src="img/g-amigos.jpg" alt=""></div>
+    <blockquote>Atletas, artistas e celebridades confiam no Cereja para as festas deles.</blockquote></div>
+  </div>
+  <div class="b red">
+    <span class="lbl">Shows por ano</span>
+    <div><div class="big">+<span data-to="200">200</span></div><div class="minibars" aria-hidden="true"><i style="animation-delay:-.1s"></i><i style="animation-delay:-.5s"></i><i style="animation-delay:-.3s"></i><i style="animation-delay:-.9s"></i><i style="animation-delay:-.2s"></i><i style="animation-delay:-.7s"></i><i style="animation-delay:-.4s"></i><i style="animation-delay:-1s"></i><i style="animation-delay:-.6s"></i><i style="animation-delay:-.15s"></i></div></div>
+  </div>
+  <div class="b dark"><span class="lbl">Países e 110 cidades</span><span class="big" style="font-size:56px" data-to="9">9</span></div>
+</section>
+
+<section class="feats" id="destaques">
+  <div class="wrap">
+    <div class="fhead">
+      <h2>Os palcos que<br><span>contam a história</span></h2>
+      <div class="arrows"><button type="button" id="prev" aria-label="Anterior">←</button><button type="button" id="next" aria-label="Próximo">→</button></div>
+    </div>
+    <div class="scroller" id="scroller">
+      <article class="fc r"><img class="wm" src="img/c.png" alt=""><span class="chip mono">Agora</span><div><div class="yr">2026</div><h3>DJ oficial da Kings League Brasil</h3><p>A liga que passou de 50 milhões de seguidores no primeiro ano.</p></div></article>
+      <article class="fc w"><span class="chip mono">Ao vivo</span><div><div class="yr">Semanal</div><h3>N Sports e Desimpedidos</h3><p>Na bancada com Galvão Bueno e no DEC.</p></div></article>
+      <article class="fc"><img class="wm" src="img/c.png" alt=""><span class="chip mono">Eliminatórias</span><div><div class="yr">2025</div><h3>DJ oficial no Maracanã</h3><p>Eliminatórias da Copa do Mundo de 2026. Brasil x Chile.</p></div></article>
+      <article class="fc b"><img class="wm" src="img/c.png" alt=""><span class="chip mono">Europa</span><div><div class="yr">2024</div><h3>Rock in Rio Lisboa</h3><p>Backstage Super Bock.</p></div></article>
+      <article class="fc"><img class="wm" src="img/c.png" alt=""><span class="chip mono">São Paulo</span><div><div class="yr">2023</div><h3>The Town e Tardezinha</h3><p>Palco Skyline e a turnê nacional com Thiaguinho.</p></div></article>
+      <article class="fc r"><img class="wm" src="img/c.png" alt=""><span class="chip mono">Rio</span><div><div class="yr">2022</div><h3>Rock in Rio</h3><p>Game Play Arena, no maior festival do Brasil.</p></div></article>
+      <article class="fc b"><img class="wm" src="img/c.png" alt=""><span class="chip mono">TV</span><div><div class="yr">2019</div><h3>Prêmio Multishow</h3><p>DJ oficial da premiação, depois DJ e apresentador do TVZ.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="wrap pillars" id="frentes">
+  <div class="pl"><span class="ic">01</span><h3>DJ</h3><p>Festivais, premiações e festas privadas, com repertório atual e energia carioca.</p><ul><li>Rock in Rio</li><li>The Town</li><li>Kings League</li></ul></div>
+  <div class="pl"><span class="ic">02</span><h3>Comunicador</h3><p>Presença semanal nos dois maiores canais de esporte do YouTube Brasil.</p><ul><li>N Sports</li><li>Desimpedidos</li><li>FM O Dia</li></ul></div>
+  <div class="pl"><span class="ic">03</span><h3>Digital</h3><p>Linguagem nativa da Geração Z, com trends, resenha e bastidores.</p><ul><li>TikTok</li><li>Instagram</li><li>YouTube</li></ul></div>
+</section>
+
+<section class="wrap cta" id="contato">
+  <div class="ctabox">
+    <img class="wm" src="img/c.png" alt="" aria-hidden="true">
+    <div><p class="mono" style="opacity:.8;margin:0">Booking · Marcas · Imprensa</p><h2 style="margin-top:14px">Vamos construir <br class="dk">a nossa história <br class="dk">juntos?</h2><p>Eventos, projetos, experiências e ativações que ficarão para sempre na memória. Entre em contato e vamos conversar!</p></div>
+    <div class="lines">
+      <div class="line"><div><small class="mono">Management · Cedric Scorza</small><strong>+55 21 99896-1647</strong></div><button type="button" data-copy="+5521998961647">Copiar</button></div>
+      <div class="line"><div><small class="mono">Comercial</small><strong>contato@djcereja.com</strong></div><button type="button" data-copy="contato@djcereja.com">Copiar</button></div>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><span>© 2026 CEREJA EVENTOS LTDA · CNPJ 67.145.617/0001-76 · <a href="mailto:contato@djcereja.com">contato@djcereja.com</a></span><span class="soc"><a href="https://www.instagram.com/cereja.djj/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61596624517384" target="_blank" rel="noopener">Facebook</a></span></div></footer>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* geometria do arco 3D */
+(function(){const ring=document.getElementById('ring');const tiles=[...ring.children];const n=tiles.length;
+  function fit(){const w=Math.round(Math.max(140,Math.min(200,innerWidth*.15)));const R=Math.round((w+26)/(2*Math.tan(Math.PI/n)));
+    ring.parentElement.style.setProperty('--w',w+'px');ring.style.setProperty('--w',w+'px');ring.style.setProperty('--R',R+'px');ring.style.setProperty('--step',(360/n)+'deg');
+    tiles.forEach((t,i)=>t.style.setProperty('--i',i))}
+  fit();addEventListener('resize',fit)})();
+
+/* fumaça vermelha animada (o "céu" do hero) */
+(function(){const c=document.getElementById('smoke'),x=c.getContext('2d');let W,H;
+  const blobs=[...Array(9)].map((_,i)=>({x:Math.random(),y:Math.random()*.8,r:.25+Math.random()*.3,sx:(Math.random()-.5)*.00025,sy:(Math.random()-.5)*.00018,c:i%3===0?'255,90,74':i%3===1?'240,34,51':'141,3,3',a:.45+Math.random()*.35}));
+  function size(){W=c.width=Math.round(c.clientWidth/2);H=c.height=Math.round(c.clientHeight/2)}
+  size();addEventListener('resize',size);
+  function draw(t){x.fillStyle='#2a0103';x.fillRect(0,0,W,H);x.globalCompositeOperation='lighter';
+    for(const b of blobs){b.x+=b.sx;b.y+=b.sy;if(b.x<-.2||b.x>1.2)b.sx*=-1;if(b.y<-.2||b.y>1)b.sy*=-1;
+      const px=b.x*W,py=b.y*H,rr=b.r*Math.max(W,H);const g=x.createRadialGradient(px,py,0,px,py,rr);g.addColorStop(0,`rgba(${b.c},${b.a*.55})`);g.addColorStop(1,`rgba(${b.c},0)`);x.fillStyle=g;x.fillRect(0,0,W,H)}
+    x.globalCompositeOperation='source-over';if(!reduce)requestAnimationFrame(draw)}
+  draw();})();
+
+/* setas dos destaques */
+const sc=document.getElementById('scroller');
+document.getElementById('prev').onclick=()=>sc.scrollBy({left:-380,behavior:'smooth'});
+document.getElementById('next').onclick=()=>sc.scrollBy({left:380,behavior:'smooth'});
+
+/* contadores */
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);const el=e.target,to=+el.dataset.to,t0=performance.now();
+  (function f(t){const k=Math.min(1,(t-t0)/1300);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)})(t0)}),{threshold:.6});
+if(!reduce)document.querySelectorAll('[data-to]').forEach(el=>{if(el.getBoundingClientRect().top>innerHeight)co.observe(el)});
+
+/* copiar */
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{
+  const done=()=>{b.textContent='Copiado';setTimeout(()=>b.textContent='Copiar',1600)};
+  const fallback=()=>{const s=b.parentElement.querySelector('strong'),r=document.createRange();r.selectNodeContents(s);const g=getSelection();g.removeAllRanges();g.addRange(r)};
+  try{navigator.clipboard.writeText(b.dataset.copy).then(done,fallback)}catch(e){fallback()}
+}));
+</script>
+</body>
+</html>
